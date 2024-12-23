@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Product Detail</title>
+        <link rel="stylesheet" href="./output.css" />
+        <link
+            rel="shortcut icon"
+            href="./assets/images/web_icon.png"
+            type="image/x-icon"
+        />
+    </head>
+    <body>
+        <div class="flex flex-col min-h-screen">
+            <main class="container flex-grow mx-auto mb-20">
+                <!-- Breadcrumbs -->
+                <section class="mb-10" id="breadcrumb-wrapper">
+                    <nav class="flex">
+                        <ul
+                            class="flex flex-1 px-6 space-x-4 rounded-md shadow bg-card"
+                        >
+                            <li class="flex items-center">
+                                <a
+                                    href="./index.html"
+                                    class="text-gray-400 hover:text-icon"
+                                >
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 24 24"
+                                        fill="currentColor"
+                                        class="size-5"
+                                    >
+                                        <path
+                                            d="M11.47 3.841a.75.75 0 0 1 1.06 0l8.69 8.69a.75.75 0 1 0 1.06-1.061l-8.689-8.69a2.25 2.25 0 0 0-3.182 0l-8.69 8.69a.75.75 0 1 0 1.061 1.06l8.69-8.689Z"
+                                        />
+                                        <path
+                                            d="m12 5.432 8.159 8.159c.03.03.06.058.091.086v6.198c0 1.035-.84 1.875-1.875 1.875H15a.75.75 0 0 1-.75-.75v-4.5a.75.75 0 0 0-.75-.75h-3a.75.75 0 0 0-.75.75V21a.75.75 0 0 1-.75.75H5.625a1.875 1.875 0 0 1-1.875-1.875v-6.198a2.29 2.29 0 0 0 .091-.086L12 5.432Z"
+                                        />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="flex">
+                                <div class="flex items-center">
+                                    <svg
+                                        fill="currentColor"
+                                        viewBox="0 0 24 44"
+                                        preserveAspectRatio="none"
+                                        aria-hidden="true"
+                                        class="flex flex-shrink-0 w-6 h-full text-gray-200"
+                                    >
+                                        <path
+                                            d="M.293 0l22 22-22 22h1.414l22-22-22-22H.293z"
+                                        ></path>
+                                    </svg>
+                                    <a
+                                        href="./all-product.html"
+                                        class="inline-block ml-4 text-sm font-medium text-gray-500 capitalize select-none hover:text-text"
+                                    >
+                                        Products
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="flex">
+                                <div class="flex items-center">
+                                    <svg
+                                        fill="currentColor"
+                                        viewBox="0 0 24 44"
+                                        preserveAspectRatio="none"
+                                        aria-hidden="true"
+                                        class="flex flex-shrink-0 w-6 h-full text-gray-200"
+                                    >
+                                        <path
+                                            d="M.293 0l22 22-22 22h1.414l22-22-22-22H.293z"
+                                        ></path>
+                                    </svg>
+
+                                    <span
+                                        class="inline-block ml-4 text-sm font-medium text-gray-500 capitalize cursor-pointer select-none hover:text-text"
+                                    >
+                                        Bàn phím Keychron K3 V2 Ultra-slim
+                                    </span>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                </section>
+
+                <section>
+                    <div class="flex mb-20 space-x-6">
+                        <div class="flex-1 space-y-5">
+                            <div class="p-5 bg-white shadow rounded-card">
+                                <div class="flex space-x-5">
+                                    <div
+                                        id="thumbnails"
+                                        class="flex flex-col space-y-3"
+                                    >
+                                        <div
+                                            class="size-[100px] overflow-hidden rounded-md ring-1 ring-ring p-2 cursor-pointer"
+                                        >
+                                            <img
+                                                src="https://imagor.owtg.one/unsafe/fit-in/1000x1000/filters:quality(100)/https://d28jzcg6y4v9j1.cloudfront.net/backend/uploads/product/color_images/2021/4/21/keychronk3-rgb-redoptic.jpg"
+                                                alt=""
+                                            />
+                                        </div>
+                                        <div
+                                            class="size-[100px] overflow-hidden rounded-md ring-1 ring-ring p-2 cursor-pointer"
+                                        >
+                                            <img
+                                                src="https://imagor.owtg.one/unsafe/fit-in/1000x1000/filters:quality(100)/https://d28jzcg6y4v9j1.cloudfront.net/backend/uploads/product/color_images/2021/4/21/keychronk3-rgb-redoptic.jpg"
+                                                alt=""
+                                            />
+                                        </div>
+                                    </div>
+                                    <div class="flex-1">
+                                        <div
+                                            class="relative overflow-hidden rounded-md"
+                                        >
+                                            <img
+                                                src="https://imagor.owtg.one/unsafe/fit-in/1000x1000/filters:quality(100)/https://d28jzcg6y4v9j1.cloudfront.net/backend/uploads/product/color_images/2021/4/21/keychronk3-rgb-redoptic.jpg"
+                                                alt=""
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-5 bg-white shadow rounded-card">
+                                <h6 class="text-lg font-semibold capitalize">
+                                    Descriptions
+                                </h6>
+                                <p class="text-sm font-normal">
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Non itaque veniam alias
+                                    quis a sunt quaerat accusamus culpa
+                                    voluptatem ipsam debitis reiciendis nisi
+                                    tempora error cumque praesentium
+                                    voluptatibus assumenda eligendi sit
+                                    molestiae repellendus unde, consectetur
+                                    pariatur quas! Sit consequatur nisi
+                                    accusantium quos eum? Optio magnam delectus,
+                                    sapiente rerum temporibus quam asperiores
+                                    itaque velit illo mollitia commodi quae,
+                                    vitae ut reiciendis. Adipisci autem
+                                    doloremque provident fugiat molestias, et
+                                    nesciunt voluptatem voluptate optio. Odio,
+                                    officiis adipisci totam dolor aperiam eum
+                                    nostrum in recusandae! Vel, nisi cupiditate
+                                    expedita quis aperiam minima. Maiores odio
+                                    porro consectetur aliquam molestias fugit
+                                    est, maxime quasi. Non, libero!
+                                </p>
+                            </div>
+                        </div>
+                        <div class="w-[475px]">
+                            <div class="p-4 bg-white shadow rounded-card">
+                                <div class="space-y-2">
+                                    <h5
+                                        class="text-sm font-semibold text-gray-400 uppercase"
+                                    >
+                                        Keychron
+                                    </h5>
+                                    <h1
+                                        class="text-lg font-semibold line-clamp-3"
+                                    >
+                                        Bàn phím Keychron K3 V2 Ultra-slim
+                                    </h1>
+                                    <div
+                                        class="flex items-center justify-between"
+                                    >
+                                        <div
+                                            class="flex flex-col space-y-1 font-bold"
+                                        >
+                                            <span
+                                                class="text-2xl text-destructive"
+                                            >
+                                                1.790.000đ
+                                            </span>
+                                            <del class="text-lg text-gray-400"
+                                                >2.190.000đ</del
+                                            >
+                                        </div>
+                                        <div
+                                            class="flex items-center w-32 h-10 bg-white rounded-md shadow"
+                                        >
+                                            <button
+                                                class="flex items-center justify-center h-full basis-4/12"
+                                            >
+                                                <svg
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                    fill="none"
+                                                    viewBox="0 0 24 24"
+                                                    stroke-width="1.5"
+                                                    stroke="currentColor"
+                                                    class="w-6 h-6"
+                                                >
+                                                    <path
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                        d="M12 6v12m6-6H6"
+                                                    />
+                                                </svg>
+                                            </button>
+                                            <input
+                                                type="number"
+                                                value="0"
+                                                class="w-full h-full font-bold text-center basis-4/12"
+                                            />
+                                            <button
+                                                class="flex items-center justify-center h-full basis-4/12"
+                                            >
+                                                <svg
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                    fill="none"
+                                                    viewBox="0 0 24 24"
+                                                    stroke-width="1.5"
+                                                    stroke="currentColor"
+                                                    class="w-6 h-6"
+                                                >
+                                                    <path
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                        d="M18 12H6"
+                                                    />
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="flex items-center justify-center space-x-4"
+                                    >
+                                        <button
+                                            class="w-40 py-2 btn btn--outline"
+                                        >
+                                            Add to Cart
+                                        </button>
+                                        <button
+                                            class="w-40 py-2 btn btn--primary"
+                                        >
+                                            Buy now
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Related Products -->
+                    <div class="space-y-4">
+                        <h1 class="text-4xl font-semibold capitalize">
+                            Related products
+                        </h1>
+                        <div class="grid grid-cols-4 gap-x-4">
+                            <div class="group">
+                                <!-- Product Image -->
+                                <div
+                                    class="relative overflow-hidden rounded-xl"
+                                >
+                                    <a href="#" class="relative block">
+                                        <img
+                                            src="https://product.hstatic.net/200000722513/product/-g733-lightspeed-wireless-white-66666_142abc4187744aa7b7fe009d7486696c_5a3256dbfe0746d9a5549eb5e11bf773_grande.png"
+                                            alt=""
+                                            class="object-cover w-full h-full"
+                                        />
+                                    </a>
+                                    <a
+                                        href="#"
+                                        class="absolute top-0 left-0 right-0 z-10 invisible transition-[visible_invisible_opacity] duration-100 ease-linear opacity-0 group-hover:visible group-hover:opacity-100"
+                                    >
+                                        <img
+                                            src="https://product.hstatic.net/200000722513/product/ech-g733-lightspeed-wireless-white-11_b76d45f28f904783b17c794a8bbdcdca_e796d4e40313463c8f928e8e524ee92d_grande.jpg"
+                                            alt=""
+                                            class="object-cover w-full h-full"
+                                        />
+                                    </a>
+                                    <!-- Add to cart -->
+                                    <div
+                                        class="absolute top-auto z-50 invisible w-full text-center transition-all duration-300 ease-linear bottom-12 group-hover:visible group-hover:bottom-5"
+                                    >
+                                        <button
+                                            class="w-4/5 py-2 text-base btn btn--outline hover:text-white hover:bg-primary"
+                                        >
+                                            Add to Cart
+                                        </button>
+                                    </div>
+                                    <!-- Actions -->
+                                    <div
+                                        class="absolute z-50 transition-[right] duration-300 ease-linear top-4 -right-12 group-hover:right-4"
+                                    >
+                                        <div class="flex flex-col gap-y-3">
+                                            <button
+                                                class="p-2 rounded-full btn btn--outline hover:text-white hover:bg-primary"
+                                            >
+                                                <svg
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                    width="24"
+                                                    height="24"
+                                                    viewBox="0 0 24 24"
+                                                    fill="none"
+                                                    stroke="currentColor"
+                                                    stroke-width="2"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                    class="lucide lucide-heart size-5"
+                                                >
+                                                    <path
+                                                        d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                                                    />
+                                                </svg>
+                                            </button>
+                                            <button
+                                                class="p-2 rounded-full btn btn--outline hover:text-white hover:bg-primary"
+                                            >
+                                                <svg
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                    width="24"
+                                                    height="24"
+                                                    viewBox="0 0 24 24"
+                                                    fill="none"
+                                                    stroke="currentColor"
+                                                    stroke-width="2"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                    class="lucide lucide-eye size-5"
+                                                >
+                                                    <path
+                                                        d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0"
+                                                    />
+                                                    <circle
+                                                        cx="12"
+                                                        cy="12"
+                                                        r="3"
+                                                    />
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Product Info -->
+                                <div class="px-[10px] pt-[15px]">
+                                    <h3 class="mb-[10px]">
+                                        <a
+                                            href="#"
+                                            class="block overflow-hidden font-semibold hover:text-primary text-ellipsis text-nowrap text-text"
+                                        >
+                                            Tai nghe Logitech G733 LIGHTSPEED
+                                            Wireless White
+                                        </a>
+                                    </h3>
+                                </div>
+                                <div
+                                    class="flex items-center justify-center font-bold gap-x-3"
+                                >
+                                    <span class="text-destructive"
+                                        >2.350.000đ</span
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </body>
+
+    <!-- Render Header and Footer -->
+    <script src="./layout/header.js"></script>
+    <script src="./layout/footer.js"></script>
+    <script src="./components/product-item.js"></script>
+</html>

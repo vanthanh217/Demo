@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Krub:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --font-krub: 'Krub', sans-serif;
+    --background: 0 0% 100%;
+    --foreground: 260.08deg 98.46% 7.24%;
+    --primary: 257.02deg 91.23% 55.29%;
+    --primary-foreground: 0deg 0.37% 97.38%;
+    --secondary: 191.29deg 100% 50%;
+    --secondary-foreground: 0deg 0.37% 97.38%;
+    --card: 0 0% 100%;
+    --card-foreground: 260.08deg 98.46% 7.24%;
+    --text: 233.33deg 9.47% 18.63%;
+    --red: 350.45deg 92.44% 53.33%;
+    --ring: 257.02deg 91.23% 55.29%;
+    --border: 207.45deg 45.68% 88.75%;
+    --input: 207.45deg 45.68% 88.75%;
+    --icon: 254.16deg 5.84% 48.69%;
+    --light-gray-1: 225deg 14.29% 94.51%;
+    --light-gray-2: 228deg 10.2% 90.39%;
+    --radius: 0.625rem;
+}
+
+@layer base {
+    .dark {
+        --background: 260.08deg 98.46% 7.24%;
+        --foreground: 0deg 0.37% 97.38%;
+        --primary: 257.02deg 91.23% 55.29%;
+        --primary-foreground: 0.21 0.04 -0.07;
+        --secondary: 191.29deg 100% 50%;
+        --secondary-foreground: 0.21 -0.01 -0.04;
+        --card: 260.08deg 98.46% 7.24%;
+        --card-foreground: 0deg 0.37% 97.38%;
+        --red: 350.45deg 92.44% 53.33%;
+        --ring: 207.44deg 36.97% 86.18%;
+        --border: 0 0% 0.1%;
+        --input: 0 0% 0.1%;
+    }
+
+    body {
+        @apply font-krub text-text;
+        text-rendering: optimizeLegibility;
+        -webkit-font-smoothing: antialiased;
+    }
+    body::-webkit-scrollbar {
+        width: 5px;
+    }
+    body::-webkit-scrollbar-track {
+        @apply bg-slate-300;
+    }
+    body::-webkit-scrollbar-thumb {
+        @apply bg-primary;
+    }
+
+    img {
+        @apply w-full h-full object-cover;
+    }
+
+    .slide-animation {
+        position: relative;
+        opacity: 10;
+    }
+    .slide-animation > * {
+        opacity: 1;
+        visibility: visible;
+        animation: fadeInUp 0.5s linear forwards;
+    }
+    .slide-animation > *:nth-child(1) {
+        animation-delay: 0.5s;
+        animation-duration: 0.5s;
+    }
+    .slide-animation > *:nth-child(2) {
+        animation-delay: 1s;
+        animation-duration: 1s;
+    }
+    .slide-animation > *:nth-child(3) {
+        animation-delay: 1.5s;
+        animation-duration: 1.5s;
+    }
+
+    li.tab-item::before {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 2px;
+        background: hsl(var(--primary));
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        transition: width 0.3s linear;
+    }
+    li.tab-item:hover::before {
+        width: 100%;
+    }
+
+    input[type='number']::-webkit-inner-spin-button,
+    input[type='number']::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    input {
+        @apply outline-none;
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, 100%, 0);
+    }
+    100% {
+        opacity: 1;
+        transform: translateZ(0);
+    }
+}
+
+@layer components {
+    .btn {
+        @apply inline-flex items-center justify-center font-medium whitespace-normal transition-colors rounded-btn focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50;
+    }
+    .btn--primary {
+        @apply text-white shadow bg-primary hover:bg-primary/90;
+    }
+    .btn--secondary {
+        @apply text-white shadow-sm bg-secondary hover:bg-secondary/80;
+    }
+    .btn--outline {
+        @apply border shadow-sm border-input bg-background;
+    }
+
+    .input--primary {
+        display: flex;
+        @apply w-full px-3 py-1 text-sm transition-colors bg-transparent border rounded-lg shadow-sm border-input file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-gray-500 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50;
+    }
+}

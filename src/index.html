@@ -1,0 +1,1061 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Gear-K</title>
+        <link rel="stylesheet" href="./output.css" />
+        <link
+            rel="shortcut icon"
+            href="./assets/images/web_icon.png"
+            type="image/x-icon"
+        />
+        <link rel="stylesheet" href="./assets/swiper/swiper-bundle.min.css" />
+    </head>
+
+    <body>
+        <div class="flex flex-col min-h-screen">
+            <main class="container flex-grow mx-auto mb-12">
+                <!-- Slide -->
+                <section
+                    class="relative mb-10 h-[600px] rounded-3xl bg-light-gray-1 py-[60px]"
+                >
+                    <div
+                        id="slide-wrapper"
+                        class="max-w-[1200px] mx-auto px-4"
+                        data-autoplay="3000"
+                    >
+                        <div id="slides" class="relative overflow-hidden">
+                            <div
+                                id="slide-container"
+                                class="flex transition-transform duration-500 ease-linear"
+                            >
+                                <!-- Slide 1 -->
+                                <div
+                                    class="flex items-center flex-shrink-0 w-full gap-x-5 slide-item"
+                                >
+                                    <div class="flex-1 slide-animation">
+                                        <h1 class="mb-3 text-5xl font-semibold">
+                                            Headphone
+                                        </h1>
+                                        <div class="max-w-[400px]">
+                                            <p>
+                                                Lorem ipsum dolor sit amet
+                                                consectetur adipisicing elit.
+                                                Suscipit nam dolorem, quam,
+                                                distinctio repellat eligendi,
+                                                eveniet blanditiis officiis
+                                                ratione amet aliquam et. Beatae
+                                                qui fugiat consequatur deleniti
+                                                voluptate, modi tempora!
+                                            </p>
+                                        </div>
+                                        <div class="mt-7">
+                                            <button
+                                                class="h-10 px-8 rounded-btn btn btn--primary"
+                                            >
+                                                <a
+                                                    href="#"
+                                                    class="block text-lg"
+                                                    >Shop now</a
+                                                >
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="flex-1 overflow-hidden rounded-2xl"
+                                    >
+                                        <a
+                                            href=""
+                                            class="block h-[470px] w-full"
+                                        >
+                                            <img
+                                                src="https://product.hstatic.net/200000722513/product/ech-g733-lightspeed-wireless-white-11_b76d45f28f904783b17c794a8bbdcdca_e796d4e40313463c8f928e8e524ee92d_grande.jpg"
+                                                alt=""
+                                                class="object-cover w-full h-full"
+                                            />
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- Slide 2 -->
+                                <div
+                                    class="flex items-center flex-shrink-0 w-full gap-x-5 slide-item"
+                                >
+                                    <div class="flex-1 slide-animation">
+                                        <h1 class="mb-3 text-5xl font-semibold">
+                                            Keyboard
+                                        </h1>
+                                        <div class="max-w-[400px]">
+                                            <p>
+                                                Lorem ipsum dolor sit amet
+                                                consectetur adipisicing elit.
+                                                Suscipit nam dolorem, quam,
+                                                distinctio repellat eligendi,
+                                                eveniet blanditiis officiis
+                                                ratione amet aliquam et. Beatae
+                                                qui fugiat consequatur deleniti
+                                                voluptate, modi tempora!
+                                            </p>
+                                        </div>
+                                        <div class="mt-7">
+                                            <button
+                                                class="h-10 px-8 rounded-btn btn btn--primary"
+                                            >
+                                                <a
+                                                    href="#"
+                                                    class="block text-lg"
+                                                    >Shop now</a
+                                                >
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="flex-1 overflow-hidden rounded-2xl"
+                                    >
+                                        <a
+                                            href="#"
+                                            class="block h-[470px] w-full"
+                                        >
+                                            <img
+                                                src="https://product.hstatic.net/200000722513/product/ow-v3-mini-hyperspeed-yellow-switch-1_73656b71030e4a7caa41725b46c12974_174b8a2676734966922b9145d0afe533_grande.jpg"
+                                                alt=""
+                                                class="object-cover w-full h-full"
+                                            />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Previous Button -->
+                        <div
+                            id="prev-btn"
+                            class="absolute z-50 -translate-y-1/2 -left-5 top-1/2"
+                        >
+                            <button
+                                class="p-2 btn btn--secondary disabled:pointer-events-none disabled:opacity-50 disabled:select-none"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke-width="2.5"
+                                    stroke="currentColor"
+                                    class="size-6"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        d="M15.75 19.5L8.25 12l7.5-7.5"
+                                    />
+                                </svg>
+                            </button>
+                        </div>
+                        <!-- Next Button -->
+                        <div
+                            id="next-btn"
+                            class="absolute z-50 -translate-y-1/2 top-1/2 -right-5"
+                        >
+                            <button
+                                class="p-2 btn btn--secondary disabled:pointer-events-none disabled:opacity-50 disabled:select-none"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke-width="2.5"
+                                    stroke="currentColor"
+                                    class="size-6"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                                    />
+                                </svg>
+                            </button>
+                        </div>
+                        <!-- Dots -->
+                        <div
+                            class="absolute z-50 -translate-x-1/2 bottom-6 left-1/2"
+                        >
+                            <ul id="dots" class="flex items-center gap-x-5">
+                                <!-- <li
+                                    class="bg-gray-300 cursor-pointer select-none rounded-full size-3 data-[dot=active]:bg-secondary dot-item"
+                                    data-dot="active"
+                                ></li>
+                                <li
+                                    class="bg-gray-300 cursor-pointer select-none rounded-full size-3 data-[dot=active]:bg-secondary dot-item"
+                                    data-dot="inactive"
+                                ></li> -->
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <!-- New Arrivals -->
+                <section class="mb-20">
+                    <div class="flex items-center justify-between mb-7">
+                        <h1 class="text-4xl font-bold text-center capitalize">
+                            New collection
+                        </h1>
+                        <a href="#" class="px-5 h-11 btn btn--primary gap-x-3">
+                            <span class="capitalize">View all product</span>
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke-width="1.5"
+                                stroke="currentColor"
+                                class="w-6 h-6"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
+                                />
+                            </svg>
+                        </a>
+                    </div>
+                    <div
+                        id="new-arrivals"
+                        class="grid grid-cols-4 gap-x-4 product-list"
+                    >
+                        <!-- <div class="group">
+                            <div class="relative overflow-hidden rounded-xl">
+                                <a href="#" class="relative block">
+                                    <img
+                                        src="https://product.hstatic.net/200000722513/product/-g733-lightspeed-wireless-white-66666_142abc4187744aa7b7fe009d7486696c_5a3256dbfe0746d9a5549eb5e11bf773_grande.png"
+                                        alt=""
+                                        class="object-cover w-full h-full"
+                                    />
+                                </a>
+                                <a
+                                    href="#"
+                                    class="absolute top-0 left-0 right-0 z-10 invisible transition-[visible_invisible_opacity] duration-100 ease-linear opacity-0 group-hover:visible group-hover:opacity-100"
+                                >
+                                    <img
+                                        src="https://product.hstatic.net/200000722513/product/ech-g733-lightspeed-wireless-white-11_b76d45f28f904783b17c794a8bbdcdca_e796d4e40313463c8f928e8e524ee92d_grande.jpg"
+                                        alt=""
+                                        class="object-cover w-full h-full"
+                                    />
+                                </a>
+                                <div
+                                    class="absolute top-auto z-50 invisible w-full text-center transition-all duration-300 ease-linear bottom-12 group-hover:visible group-hover:bottom-5"
+                                >
+                                    <button
+                                        class="w-4/5 py-2 text-base btn btn--outline hover:text-white hover:bg-primary"
+                                    >
+                                        Add to Cart
+                                    </button>
+                                </div>
+                                <div
+                                    class="absolute z-50 transition-[right] duration-300 ease-linear top-4 -right-12 group-hover:right-4"
+                                >
+                                    <div class="flex flex-col gap-y-3">
+                                        <button
+                                            class="p-2 rounded-full btn btn--outline hover:text-white hover:bg-primary"
+                                        >
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                width="24"
+                                                height="24"
+                                                viewBox="0 0 24 24"
+                                                fill="none"
+                                                stroke="currentColor"
+                                                stroke-width="2"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                class="lucide lucide-heart size-5"
+                                            >
+                                                <path
+                                                    d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                                                />
+                                            </svg>
+                                        </button>
+                                        <button
+                                            class="p-2 rounded-full btn btn--outline hover:text-white hover:bg-primary"
+                                        >
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                width="24"
+                                                height="24"
+                                                viewBox="0 0 24 24"
+                                                fill="none"
+                                                stroke="currentColor"
+                                                stroke-width="2"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                class="lucide lucide-eye size-5"
+                                            >
+                                                <path
+                                                    d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0"
+                                                />
+                                                <circle cx="12" cy="12" r="3" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="px-[10px] pt-[15px]">
+                                <h3 class="mb-[10px]">
+                                    <a
+                                        href="#"
+                                        class="block overflow-hidden font-semibold hover:text-primary text-ellipsis text-nowrap text-text"
+                                    >
+                                        Tai nghe Logitech G733 LIGHTSPEED
+                                        Wireless White
+                                    </a>
+                                </h3>
+                            </div>
+                            <div
+                                class="flex items-center justify-center font-bold gap-x-3"
+                            >
+                                <span class="text-destructive">2.350.000đ</span>
+                            </div>
+                        </div> -->
+                    </div>
+                </section>
+                <!-- Product Sale -->
+                <section class="mb-20">
+                    <div class="flex items-center justify-between mb-7">
+                        <h1 class="text-4xl font-bold text-center capitalize">
+                            Flash sale
+                        </h1>
+                        <a href="#" class="px-5 h-11 btn btn--primary gap-x-3">
+                            <span class="capitalize">View all product</span>
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke-width="1.5"
+                                stroke="currentColor"
+                                class="w-6 h-6"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
+                                />
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="grid grid-cols-2 gap-x-4">
+                        <div class="p-5 bg-white shadow rounded-card">
+                            <div class="flex gap-x-5">
+                                <div class="w-2/5">
+                                    <a
+                                        href="./product-detail.html"
+                                        class="block"
+                                    >
+                                        <img
+                                            src="https://imagor.owtg.one/unsafe/fit-in/1000x1000/filters:quality(100)/https://d28jzcg6y4v9j1.cloudfront.net/media/core/products/2024/6/6/chuot-khong-day-attack-shark-x11-undefined-NbC.jpg"
+                                            alt=""
+                                        />
+                                    </a>
+                                </div>
+                                <div class="flex-1">
+                                    <h3 class="mb-4 line-clamp-2">
+                                        <a
+                                            href="./product-detail.html"
+                                            class="block text-xl font-semibold hover:text-primary"
+                                        >
+                                            Chuột không dây Attack Shark X11
+                                        </a>
+                                    </h3>
+                                    <div
+                                        class="flex items-center mb-4 font-bold space-x-7"
+                                    >
+                                        <span class="text-2xl text-destructive"
+                                            >650.000₫</span
+                                        >
+                                        <del class="text-lg text-gray-300"
+                                            >800.000₫</del
+                                        >
+                                    </div>
+                                    <div
+                                        id="countdown"
+                                        class="flex items-center justify-around rounded-lg bg-white/85 shadow-[0_1px_6px_#20212447] mb-7"
+                                        data-date-end="31-12-2024 23:59:59"
+                                    >
+                                        <div class="flex flex-col items-center">
+                                            <span
+                                                id="days"
+                                                class="font-bold"
+                                            ></span>
+                                            <span>Days</span>
+                                        </div>
+                                        <div class="flex flex-col items-center">
+                                            <span
+                                                id="hours"
+                                                class="font-bold"
+                                            ></span>
+                                            <span>Hours</span>
+                                        </div>
+                                        <div class="flex flex-col items-center">
+                                            <span
+                                                id="mins"
+                                                class="font-bold"
+                                            ></span>
+                                            <span>Mins</span>
+                                        </div>
+                                        <div class="flex flex-col items-center">
+                                            <span
+                                                id="secs"
+                                                class="font-bold"
+                                            ></span>
+                                            <span>Secs</span>
+                                        </div>
+                                    </div>
+                                    <div class="flex space-x-5">
+                                        <button
+                                            class="px-6 py-2 text-white btn btn--primary gap-x-2"
+                                        >
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 24 24"
+                                                fill="none"
+                                                stroke="currentColor"
+                                                stroke-width="2"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                class="lucide lucide-shopping-bag size-5"
+                                            >
+                                                <path
+                                                    d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"
+                                                />
+                                                <path d="M3 6h18" />
+                                                <path
+                                                    d="M16 10a4 4 0 0 1-8 0"
+                                                />
+                                            </svg>
+                                            Add to cart
+                                        </button>
+                                        <button
+                                            class="w-10 text-gray-500 btn btn--outline"
+                                        >
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                width="24"
+                                                height="24"
+                                                viewBox="0 0 24 24"
+                                                fill="none"
+                                                stroke="currentColor"
+                                                stroke-width="2"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                class="lucide lucide-heart size-5"
+                                            >
+                                                <path
+                                                    d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                                                />
+                                            </svg>
+                                        </button>
+                                        <button
+                                            class="w-10 text-gray-500 btn btn--outline"
+                                        >
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                width="24"
+                                                height="24"
+                                                viewBox="0 0 24 24"
+                                                fill="none"
+                                                stroke="currentColor"
+                                                stroke-width="2"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                class="lucide lucide-eye size-5"
+                                            >
+                                                <path
+                                                    d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0"
+                                                />
+                                                <circle cx="12" cy="12" r="3" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Product Category  -->
+                <section class="mb-20">
+                    <div class="flex items-center justify-between mb-7">
+                        <h1 class="text-4xl font-bold text-center capitalize">
+                            Featured categories
+                        </h1>
+                        <a href="#" class="px-5 h-11 btn btn--primary gap-x-3">
+                            <span class="capitalize">View all product</span>
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke-width="1.5"
+                                stroke="currentColor"
+                                class="w-6 h-6"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
+                                />
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="space-y-2">
+                        <ul
+                            class="flex items-center space-x-7 text-lg font-medium capitalize *:cursor-pointer *:select-none"
+                        >
+                            <li
+                                class="relative transition-colors duration-300 ease-linear tab-item hover:text-primary"
+                                data-tab="keyboard"
+                            >
+                                Keyboard
+                            </li>
+                            <li
+                                class="relative transition-colors duration-300 ease-linear tab-item hover:text-primary"
+                                data-tab="mouse"
+                            >
+                                Mouse
+                            </li>
+                            <li
+                                class="relative transition-colors duration-300 ease-linear tab-item hover:text-primary"
+                                data-tab="headphone"
+                            >
+                                Headphone
+                            </li>
+                            <li
+                                class="relative transition-colors duration-300 ease-linear tab-item hover:text-primary"
+                                data-tab="smart-band"
+                            >
+                                Smart band
+                            </li>
+                        </ul>
+                        <div id="tab-content">
+                            <div
+                                class="grid grid-cols-4 gap-4 product-list"
+                                data-tab-content="keyboard"
+                            >
+                                <div class="group">
+                                    <!-- Product Image -->
+                                    <div
+                                        class="relative overflow-hidden rounded-xl"
+                                    >
+                                        <a href="#" class="relative block">
+                                            <img
+                                                src="https://imagor.owtg.one/unsafe/fit-in/1000x1000/filters:quality(100)/https://d28jzcg6y4v9j1.cloudfront.net/media/core/products/2024/6/6/chuot-khong-day-attack-shark-x11-undefined-KCv.jpg"
+                                                alt=""
+                                                class="object-cover w-full h-full"
+                                            />
+                                        </a>
+                                        <a
+                                            href="#"
+                                            class="absolute top-0 left-0 right-0 z-10 invisible transition-[visible_invisible_opacity] duration-100 ease-linear opacity-0 group-hover:visible group-hover:opacity-100"
+                                        >
+                                            <img
+                                                src="https://imagor.owtg.one/unsafe/fit-in/1000x1000/filters:quality(100)/https://d28jzcg6y4v9j1.cloudfront.net/media/core/products/2024/6/6/chuot-khong-day-attack-shark-x11-undefined-KCv.jpg"
+                                                alt=""
+                                                class="object-cover w-full h-full"
+                                            />
+                                        </a>
+                                        <!-- Add to cart -->
+                                        <div
+                                            class="absolute top-auto z-50 invisible w-full text-center transition-all duration-300 ease-linear bottom-12 group-hover:visible group-hover:bottom-5"
+                                        >
+                                            <button
+                                                class="w-4/5 py-2 text-base btn btn--outline hover:text-white hover:bg-primary"
+                                            >
+                                                Add to Cart
+                                            </button>
+                                        </div>
+                                        <!-- Actions -->
+                                        <div
+                                            class="absolute z-50 transition-[right] duration-300 ease-linear top-4 -right-12 group-hover:right-4"
+                                        >
+                                            <div class="flex flex-col gap-y-3">
+                                                <button
+                                                    class="p-2 rounded-full btn btn--outline hover:text-white hover:bg-primary"
+                                                >
+                                                    <svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        width="24"
+                                                        height="24"
+                                                        viewBox="0 0 24 24"
+                                                        fill="none"
+                                                        stroke="currentColor"
+                                                        stroke-width="2"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                        class="lucide lucide-heart size-5"
+                                                    >
+                                                        <path
+                                                            d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                                                        />
+                                                    </svg>
+                                                </button>
+                                                <button
+                                                    class="p-2 rounded-full btn btn--outline hover:text-white hover:bg-primary"
+                                                >
+                                                    <svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        width="24"
+                                                        height="24"
+                                                        viewBox="0 0 24 24"
+                                                        fill="none"
+                                                        stroke="currentColor"
+                                                        stroke-width="2"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                        class="lucide lucide-eye size-5"
+                                                    >
+                                                        <path
+                                                            d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0"
+                                                        />
+                                                        <circle
+                                                            cx="12"
+                                                            cy="12"
+                                                            r="3"
+                                                        />
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Product Info -->
+                                    <div class="px-[10px] pt-[15px]">
+                                        <h3 class="mb-[10px]">
+                                            <a
+                                                href="#"
+                                                class="block overflow-hidden font-semibold hover:text-primary text-ellipsis text-nowrap text-text"
+                                            >
+                                                Chuột không dây Attack Shark X11
+                                            </a>
+                                        </h3>
+                                    </div>
+                                    <div
+                                        class="flex items-center justify-center font-bold gap-x-3"
+                                    >
+                                        <span class="text-destructive">
+                                            599.000₫
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="absolute grid invisible grid-cols-4 gap-4 opacity-0 product-list"
+                                data-tab-content="mouse"
+                            >
+                                <div class="group">
+                                    <!-- Product Image -->
+                                    <div
+                                        class="relative overflow-hidden rounded-xl"
+                                    >
+                                        <a href="#" class="relative block">
+                                            <img
+                                                src="https://imagor.owtg.one/unsafe/fit-in/1000x1000/filters:quality(100)/https://d28jzcg6y4v9j1.cloudfront.net/media/core/products/2024/6/6/chuot-khong-day-attack-shark-x11-undefined-KCv.jpg"
+                                                alt=""
+                                                class="object-cover w-full h-full"
+                                            />
+                                        </a>
+                                        <a
+                                            href="#"
+                                            class="absolute top-0 left-0 right-0 z-10 invisible transition-[visible_invisible_opacity] duration-100 ease-linear opacity-0 group-hover:visible group-hover:opacity-100"
+                                        >
+                                            <img
+                                                src="https://imagor.owtg.one/unsafe/fit-in/1000x1000/filters:quality(100)/https://d28jzcg6y4v9j1.cloudfront.net/media/core/products/2024/6/6/chuot-khong-day-attack-shark-x11-undefined-KCv.jpg"
+                                                alt=""
+                                                class="object-cover w-full h-full"
+                                            />
+                                        </a>
+                                        <!-- Add to cart -->
+                                        <div
+                                            class="absolute top-auto z-50 invisible w-full text-center transition-all duration-300 ease-linear bottom-12 group-hover:visible group-hover:bottom-5"
+                                        >
+                                            <button
+                                                class="w-4/5 py-2 text-base btn btn--outline hover:text-white hover:bg-primary"
+                                            >
+                                                Add to Cart
+                                            </button>
+                                        </div>
+                                        <!-- Actions -->
+                                        <div
+                                            class="absolute z-50 transition-[right] duration-300 ease-linear top-4 -right-12 group-hover:right-4"
+                                        >
+                                            <div class="flex flex-col gap-y-3">
+                                                <button
+                                                    class="p-2 rounded-full btn btn--outline hover:text-white hover:bg-primary"
+                                                >
+                                                    <svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        width="24"
+                                                        height="24"
+                                                        viewBox="0 0 24 24"
+                                                        fill="none"
+                                                        stroke="currentColor"
+                                                        stroke-width="2"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                        class="lucide lucide-heart size-5"
+                                                    >
+                                                        <path
+                                                            d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                                                        />
+                                                    </svg>
+                                                </button>
+                                                <button
+                                                    class="p-2 rounded-full btn btn--outline hover:text-white hover:bg-primary"
+                                                >
+                                                    <svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        width="24"
+                                                        height="24"
+                                                        viewBox="0 0 24 24"
+                                                        fill="none"
+                                                        stroke="currentColor"
+                                                        stroke-width="2"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                        class="lucide lucide-eye size-5"
+                                                    >
+                                                        <path
+                                                            d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0"
+                                                        />
+                                                        <circle
+                                                            cx="12"
+                                                            cy="12"
+                                                            r="3"
+                                                        />
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Product Info -->
+                                    <div class="px-[10px] pt-[15px]">
+                                        <h3 class="mb-[10px]">
+                                            <a
+                                                href="#"
+                                                class="block overflow-hidden font-semibold hover:text-primary text-ellipsis text-nowrap text-text"
+                                            >
+                                                Chuột không dây Attack Shark X11
+                                            </a>
+                                        </h3>
+                                    </div>
+                                    <div
+                                        class="flex items-center justify-center font-bold gap-x-3"
+                                    >
+                                        <span class="text-destructive">
+                                            599.000₫
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="absolute grid invisible grid-cols-4 gap-4 opacity-0 product-list"
+                                data-tab-content="headphone"
+                            >
+                                <div class="group">
+                                    <!-- Product Image -->
+                                    <div
+                                        class="relative overflow-hidden rounded-xl"
+                                    >
+                                        <a href="#" class="relative block">
+                                            <img
+                                                src="https://imagor.owtg.one/unsafe/fit-in/1000x1000/filters:quality(100)/https://d28jzcg6y4v9j1.cloudfront.net/media/core/products/2024/6/6/chuot-khong-day-attack-shark-x11-undefined-KCv.jpg"
+                                                alt=""
+                                                class="object-cover w-full h-full"
+                                            />
+                                        </a>
+                                        <a
+                                            href="#"
+                                            class="absolute top-0 left-0 right-0 z-10 invisible transition-[visible_invisible_opacity] duration-100 ease-linear opacity-0 group-hover:visible group-hover:opacity-100"
+                                        >
+                                            <img
+                                                src="https://imagor.owtg.one/unsafe/fit-in/1000x1000/filters:quality(100)/https://d28jzcg6y4v9j1.cloudfront.net/media/core/products/2024/6/6/chuot-khong-day-attack-shark-x11-undefined-KCv.jpg"
+                                                alt=""
+                                                class="object-cover w-full h-full"
+                                            />
+                                        </a>
+                                        <!-- Add to cart -->
+                                        <div
+                                            class="absolute top-auto z-50 invisible w-full text-center transition-all duration-300 ease-linear bottom-12 group-hover:visible group-hover:bottom-5"
+                                        >
+                                            <button
+                                                class="w-4/5 py-2 text-base btn btn--outline hover:text-white hover:bg-primary"
+                                            >
+                                                Add to Cart
+                                            </button>
+                                        </div>
+                                        <!-- Actions -->
+                                        <div
+                                            class="absolute z-50 transition-[right] duration-300 ease-linear top-4 -right-12 group-hover:right-4"
+                                        >
+                                            <div class="flex flex-col gap-y-3">
+                                                <button
+                                                    class="p-2 rounded-full btn btn--outline hover:text-white hover:bg-primary"
+                                                >
+                                                    <svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        width="24"
+                                                        height="24"
+                                                        viewBox="0 0 24 24"
+                                                        fill="none"
+                                                        stroke="currentColor"
+                                                        stroke-width="2"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                        class="lucide lucide-heart size-5"
+                                                    >
+                                                        <path
+                                                            d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                                                        />
+                                                    </svg>
+                                                </button>
+                                                <button
+                                                    class="p-2 rounded-full btn btn--outline hover:text-white hover:bg-primary"
+                                                >
+                                                    <svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        width="24"
+                                                        height="24"
+                                                        viewBox="0 0 24 24"
+                                                        fill="none"
+                                                        stroke="currentColor"
+                                                        stroke-width="2"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                        class="lucide lucide-eye size-5"
+                                                    >
+                                                        <path
+                                                            d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0"
+                                                        />
+                                                        <circle
+                                                            cx="12"
+                                                            cy="12"
+                                                            r="3"
+                                                        />
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Product Info -->
+                                    <div class="px-[10px] pt-[15px]">
+                                        <h3 class="mb-[10px]">
+                                            <a
+                                                href="#"
+                                                class="block overflow-hidden font-semibold hover:text-primary text-ellipsis text-nowrap text-text"
+                                            >
+                                                Chuột không dây Attack Shark X11
+                                            </a>
+                                        </h3>
+                                    </div>
+                                    <div
+                                        class="flex items-center justify-center font-bold gap-x-3"
+                                    >
+                                        <span class="text-destructive">
+                                            599.000₫
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="absolute grid invisible grid-cols-4 gap-4 opacity-0 product-list"
+                                data-tab-content="smart-band"
+                            >
+                                <div class="group">
+                                    <!-- Product Image -->
+                                    <div
+                                        class="relative overflow-hidden rounded-xl"
+                                    >
+                                        <a href="#" class="relative block">
+                                            <img
+                                                src="https://imagor.owtg.one/unsafe/fit-in/1000x1000/filters:quality(100)/https://d28jzcg6y4v9j1.cloudfront.net/media/core/products/2024/6/6/chuot-khong-day-attack-shark-x11-undefined-KCv.jpg"
+                                                alt=""
+                                                class="object-cover w-full h-full"
+                                            />
+                                        </a>
+                                        <a
+                                            href="#"
+                                            class="absolute top-0 left-0 right-0 z-10 invisible transition-[visible_invisible_opacity] duration-100 ease-linear opacity-0 group-hover:visible group-hover:opacity-100"
+                                        >
+                                            <img
+                                                src="https://imagor.owtg.one/unsafe/fit-in/1000x1000/filters:quality(100)/https://d28jzcg6y4v9j1.cloudfront.net/media/core/products/2024/6/6/chuot-khong-day-attack-shark-x11-undefined-KCv.jpg"
+                                                alt=""
+                                                class="object-cover w-full h-full"
+                                            />
+                                        </a>
+                                        <!-- Add to cart -->
+                                        <div
+                                            class="absolute top-auto z-50 invisible w-full text-center transition-all duration-300 ease-linear bottom-12 group-hover:visible group-hover:bottom-5"
+                                        >
+                                            <button
+                                                class="w-4/5 py-2 text-base btn btn--outline hover:text-white hover:bg-primary"
+                                            >
+                                                Add to Cart
+                                            </button>
+                                        </div>
+                                        <!-- Actions -->
+                                        <div
+                                            class="absolute z-50 transition-[right] duration-300 ease-linear top-4 -right-12 group-hover:right-4"
+                                        >
+                                            <div class="flex flex-col gap-y-3">
+                                                <button
+                                                    class="p-2 rounded-full btn btn--outline hover:text-white hover:bg-primary"
+                                                >
+                                                    <svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        width="24"
+                                                        height="24"
+                                                        viewBox="0 0 24 24"
+                                                        fill="none"
+                                                        stroke="currentColor"
+                                                        stroke-width="2"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                        class="lucide lucide-heart size-5"
+                                                    >
+                                                        <path
+                                                            d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                                                        />
+                                                    </svg>
+                                                </button>
+                                                <button
+                                                    class="p-2 rounded-full btn btn--outline hover:text-white hover:bg-primary"
+                                                >
+                                                    <svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        width="24"
+                                                        height="24"
+                                                        viewBox="0 0 24 24"
+                                                        fill="none"
+                                                        stroke="currentColor"
+                                                        stroke-width="2"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                        class="lucide lucide-eye size-5"
+                                                    >
+                                                        <path
+                                                            d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0"
+                                                        />
+                                                        <circle
+                                                            cx="12"
+                                                            cy="12"
+                                                            r="3"
+                                                        />
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Product Info -->
+                                    <div class="px-[10px] pt-[15px]">
+                                        <h3 class="mb-[10px]">
+                                            <a
+                                                href="#"
+                                                class="block overflow-hidden font-semibold hover:text-primary text-ellipsis text-nowrap text-text"
+                                            >
+                                                Chuột không dây Attack Shark X11
+                                            </a>
+                                        </h3>
+                                    </div>
+                                    <div
+                                        class="flex items-center justify-center font-bold gap-x-3"
+                                    >
+                                        <span class="text-destructive">
+                                            599.000₫
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Latest post -->
+                <section class="mb-20">
+                    <div class="flex items-center justify-between mb-7">
+                        <h1 class="text-4xl font-bold text-center capitalize">
+                            Latest blog
+                        </h1>
+                        <a href="#" class="px-5 h-11 btn btn--primary gap-x-3">
+                            <span class="capitalize">View all posts</span>
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke-width="1.5"
+                                stroke="currentColor"
+                                class="w-6 h-6"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
+                                />
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="grid grid-cols-3 gap-x-10">
+                        <div class="space-y-2 group">
+                            <div class="relative overflow-hidden rounded-2xl">
+                                <a href="#" class="relative block h-[275px]">
+                                    <img
+                                        src="https://images.unsplash.com/photo-1510798831971-661eb04b3739?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                        alt=""
+                                        class="transition duration-300 ease-linear group-hover:scale-110"
+                                    />
+                                </a>
+                            </div>
+                            <div class="mb-4 space-y-1">
+                                <div class="flex items-center">
+                                    <div
+                                        class="flex items-center text-gray-400 gap-x-2"
+                                    >
+                                        <svg
+                                            stroke="currentColor"
+                                            fill="currentColor"
+                                            stroke-width="0"
+                                            viewBox="0 0 512 512"
+                                            height="1em"
+                                            width="1em"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                fill="none"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                stroke-width="32"
+                                                d="M112.91 128A191.85 191.85 0 0 0 64 254c-1.18 106.35 85.65 193.8 192 194 106.2.2 192-85.83 192-192 0-104.54-83.55-189.61-187.5-192a4.36 4.36 0 0 0-4.5 4.37V152"
+                                            ></path>
+                                            <path
+                                                d="m233.38 278.63-79-113a8.13 8.13 0 0 1 11.32-11.32l113 79a32.5 32.5 0 0 1-37.25 53.26 33.21 33.21 0 0 1-8.07-7.94z"
+                                            ></path>
+                                        </svg>
+                                        <span class="text-sm font-medium">
+                                            26/11/2024
+                                        </span>
+                                    </div>
+                                </div>
+                                <h2
+                                    class="font-bold transition-all line-clamp-2 hover:text-primary"
+                                >
+                                    <a href="#" class="block">
+                                        Lorem ipsum dolor, sit amet consectetur
+                                        adipisicing elit. Vel, nisi!
+                                    </a>
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </body>
+
+    <!-- Render Header and Footer -->
+    <script src="./layout/header.js"></script>
+    <script src="./layout/footer.js"></script>
+    <script src="./components/product-item.js"></script>
+    <script src="./assets/js/jquery-3.7.1.min.js"></script>
+    <script src="./assets/js/slider.js"></script>
+    <script src="./assets/js/countdown.js"></script>
+</html>
