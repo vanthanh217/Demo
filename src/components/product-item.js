@@ -38,7 +38,7 @@ const renderProducts = (targetSelector) => {
         <div class="group">
             <!-- Product Image -->
             <div class="relative overflow-hidden rounded-xl">
-                <a href="#" class="relative block">
+                <a href="#" class="relative block transition-[visible_invisible_opacity] duration-100 ease-linear group-hover:invisible group-hover:opacity-0">
                     <img
                         src="${item.image}"
                         alt=""
